@@ -1,0 +1,536 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.7em;
+	background: ;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/*button, link, text style*/
+.text-primary {
+	color: #FFB320;
+}
+
+.btn {
+	background: #FFB320;
+	padding: 7px 25px;
+	border-radius: 3rem;
+	color: black;
+
+}
+
+.btn:hover {
+	opacity: .8;
+	color: #fff;
+	transition: 1s;
+}
+
+/*navbar*/
+#navbar {
+	padding: 10px;
+	background: #131313;
+	border-bottom: 1px solid #FFB320;
+}
+#navbar .container{
+	margin: 0 4rem;
+	padding: 8px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#navbar .container img {
+	/*padding: 1rem;*/
+}
+
+#navbar .container ul {
+	display: flex;
+	list-style: none;
+}
+
+#navbar .container ul li a{
+	padding: 1rem;
+}
+
+#navbar .container ul li a:hover,
+#navbar .container .current {
+	color: #FFB320;
+	/*border-bottom: 1px solid #FFB320;*/
+}
+
+/*showcase*/
+#showcase {
+	display: flex;
+	align-items: center;
+	background: url('../img/817707.jpg') no-repeat center center/cover;
+	height: 135vh;
+}
+
+#showcase .showcase-content {
+	margin-left: 6rem;
+	color: #fff;
+	/*width: 60%;*/
+}
+
+#showcase .showcase-content h1 {
+	font-size: 4rem;
+	line-height: 1em
+}
+
+#showcase .showcase-content p {
+	width: 50%;
+	margin-top: 2rem;
+}
+
+.btn-load {
+	padding: 20px 35px;
+	font-size: 1rem;
+}
+
+/*latest news*/
+#latest-news {
+	height: 70px;
+}
+#latest-news .latest-news-content {
+	display: flex;
+}
+
+#latest-news .latest-news-content .box1{
+	display: flex;
+	background: #FFB320;
+	width: 33.33%;
+	height: 70px;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#latest-news .latest-news-content .box1 h1 {
+	margin-right: 3rem;
+	color: #fff;
+	font-size: 20px;
+}
+
+#latest-news .latest-news-content .box2 {
+	display: flex;
+	background: #131313;
+	height: 70px;
+	width: 66.66%;
+	color: #fff;
+	align-items: center;
+}
+
+#latest-news .latest-news-content .box2 .item {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/*item*/
+#item {
+	display: flex;
+	background: #fff;
+	height: 90vh;
+	align-items: center;
+	justify-content: center;
+}
+
+#item .item-content {
+	display: flex;
+}
+
+#item .item-content .item-panel {
+	width: 300px;
+	height: 400px;
+}
+
+.item-info {
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+	margin: 9rem 2rem;
+}
+
+.item1 {
+	background: url('../img/144671.jpg') no-repeat center center/cover;
+}
+
+.item2 {
+	background: url('../img/144672.jpg') no-repeat center center/cover;
+}
+
+.item3 {
+	background: url('../img/167766.jpg') no-repeat center center/cover;
+}
+
+.item4 {
+	background: url('../img/167778.jpg') no-repeat center center/cover;
+}
+
+.btns {
+	padding: 5px 20px;
+	text-align: center;
+	display: inline-block;
+	color: #fff;
+	outline: none;
+	border: none;
+	margin: 2rem;
+	font-size: 14px;
+}
+
+.btn-warning {
+	background: #FF205F;
+}
+
+.btn-success {
+	background: #4EAE60;
+}
+
+.btn-info {
+	background: #694EAE;
+}
+
+/*Recent Games*/
+#recentgames {
+	background: url('../img/wp4806822-war-games-wallpapers.jpg') no-repeat center center/cover;
+	height: 115vh;
+}
+
+#recentgames .recentgames-heading {
+	text-align: center;
+	color: #fff
+}
+.recentgames-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 4rem;
+}
+
+.recentgames-box {
+	height: 450px;
+	width: 350px;
+	margin: 1rem;
+}
+
+.recentgames-boxup {
+	height: 50%;
+	width: 100%;
+}
+
+.recentgames-boxdown {
+	height: 50%;
+	width: 100%;
+	display: flex;
+	background: #fff;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+}
+
+.game1 {
+	background: url('../img/wp6690676-war-games-wallpapers.jpg') no-repeat center center/cover;
+}
+
+.game2 {
+	background: url('../img/wp6225854-war-games-wallpapers (1).jpg') no-repeat center center/cover;
+}
+
+.game3 {
+	background: url('../img/wp6690501-war-games-wallpapers.jpg') no-repeat center center/cover;
+}
+
+.boxdown-icon {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background: #FFB320;
+}
+
+.boxdown-icon img {
+	height: 25px;
+	width: 25px;
+	/*text-align: center;*/
+}
+
+
+
+
+.boxdown-content {
+	display: flex;
+	flex-direction: column;
+	margin-left: 1rem;
+}
+
+/*tournament*/
+#tournament {
+	background: url('../img/jakub-sofranko-RoYujmHrdxA-unsplash.jpg') no-repeat center center/cover;
+	height: 80vh;
+	
+}
+
+#tournament .tournament-content {
+	height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+#tournament .tournament-content .tournament-content-box {
+	height: 300px;
+	width: 550px;
+	background: #252525;
+	margin: 1rem;
+	display: flex;
+}
+
+.tournament-content-boxl {
+	width: 40%;
+	height: 100%;
+}
+
+.tournament-content-boxl img {
+	width: 170px;
+	height: 170px;
+	display: flex;
+	margin-top: 3.5rem;
+	margin-left: 1.5rem;
+}
+
+.tournament-content-boxr {
+	width: 60%;
+	height: 100%;
+	margin-top: 6rem;
+	color: #fff;
+}
+
+.tournament-content-boxr p {
+	font-size: 12px;
+	opacity: .8;
+}
+
+.tournament-btn {
+	background: #FFB320;
+	padding: 8px 16px;
+	outline: none;
+	border: none;
+	text-align: center;
+	display: inline-block;
+	top: 0;
+	left: 0;
+	font-weight: 700;
+}
+
+/*.heading {
+	text-align: center;
+	padding: 2rem;
+}*/
+
+/*recentreviews*/
+#recentreviews {
+	background: url('../img/WallpaperDog-17279936.jpg') no-repeat center center/cover;
+	height: 120vh;
+}
+
+#recentreviews .recentreviews-heading {
+	text-align: center;
+	margin-top: 5rem;
+	font-size: 2rem;
+}
+
+.recentreviews-move {
+	margin-top: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.recentreviews-box {
+	display: flex;
+	flex-direction: column;
+	height: 600px;
+	width: 300px;
+	align-items: center;
+	margin: 5px
+}
+
+.recentreviews-img {
+	height: 400px;
+	width: 100%;
+	position: relative;
+}
+
+.rimg1 {
+	background: url('../img/144672.jpg') no-repeat center center/cover;
+}
+
+.rimg2 {
+	background: url('../img/167766.jpg') no-repeat center center/cover;
+}
+
+
+.rimg3 {
+	background: url('../img/144668.jpg') no-repeat center center/cover;
+}
+
+
+.rimg4 {
+	background: url('../img/144671.jpg') no-repeat center center/cover;
+}
+
+
+.circle {
+	display: flex;
+	color: #fff;
+	width: 50px;
+	height: 50px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	position: absolute;
+	margin-left: 1.5rem;
+	top: -25px
+}
+
+.circle1 {
+	background: #FF205F;
+}
+
+.circle2 {
+	background: #4EAE60;
+}
+
+
+.circle3 {
+	background: #694EAE;
+}
+
+
+.circle4 {
+	background: #FF1493;
+}
+
+.recentreviews-content {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 2rem;
+	font-size: 14px;
+	opacity: .8;
+	background: #fff;
+}
+
+/*.recentreviews-content h1 {
+	color: #FFB320;
+}*/
+
+/*footer*/
+#footer {
+	background: url('../img/jakub-sofranko-RoYujmHrdxA-unsplash.jpg') no-repeat center center/cover;
+	height: 100vh;
+}
+.foonterbox {
+	display: flex;
+}
+
+.fbox1 {
+	width: 40%;
+	height: 100vh;
+	position: relative;
+}
+
+.items {
+	color: #fff;
+	margin-left: 6rem;
+}
+
+.angry {
+	position: absolute;
+	bottom: -25px;
+}
+
+.fbox2 {
+	width: 60%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.postbox {
+	background: #131313;
+	width: 350px;
+	height: 520px;
+	margin: 10px;
+}
+
+.post1 {
+	display: flex;
+}
+
+.lead {
+	margin-top: 2rem;
+	margin-left: 1rem;
+	color: #fff;
+	font-size: 10px;
+}
+.post-content h4 {
+	font-size: 12px;
+}
+.post-content p {
+	font-size: 10px;
+}
+.post-img {
+	height: 115px;
+	width: 40%;
+}
+
+.post-img img {
+	height: 110px;
+	width: 110px;
+	margin-left: 1rem;
+	margin-top: 2rem
+}
+
+.post-content {
+	height: 115px;
+	width: 60%;
+	margin-top: 2rem;
+	color: #fff;
+}
+
+
+.comments img {
+	border-radius: 50%;
+	height: 70px;
+	width: 70px;
+}
+
+#footer-nav {
+	background: #131313;
+	display: flex;
+	justify-content: space-between;
+	/*opacity: .9;*/
+}
+
+#footer-nav ul {
+	display: flex;
+	list-style: none;
+}
+
+#footer-nav ul li {
+	padding: 1rem;
+}
